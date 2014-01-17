@@ -64,7 +64,7 @@ else:
         enabledShareProviders: "<?php echo $share_providers; ?>",
         version: 2,
         context: {source: 'comments'},
-        streamID: "comments-<?php echo $post_id;?>",
+        streamID: "<?php echo $permalink;?>",
         onCommentSubmitted: function (res) {
           var data = {
             action: "gigya_add_comment",
